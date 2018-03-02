@@ -6,4 +6,4 @@ To reproduce the issue:
   * Add the path of 2 or more large files (I was using a 50MB file and a 800MB file) to the console app config file
   * Run the console app, it will try to upload the specified file to the web app
   * Check the log file for the exception
-  * Alternatively, use curl: curl -F 'file1=@PathToLargeFile1' -F 'file2=@PathToLargeFile2' http\://localhost:5000/api/values/upload
+  * Alternatively, use curl: <pre> curl -F 'file1=@PathToLargeFile1' -F 'file2=@PathToLargeFile2' http\://localhost:5000/api/values/upload </pre>
